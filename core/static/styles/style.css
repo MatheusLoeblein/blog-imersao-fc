@@ -12,39 +12,22 @@ html {
 
 
 header {
-    background: black;
+    background: #1d1c1c;
     padding: 3rem;
     font-size: 2rem;
     font-weight: 900;
     letter-spacing: 2px;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 10rem 1fr;
-    padding: 3rem;
-    gap: 5rem;
-}
-
-.tags {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-.tags button {
-    background: white;
-    outline: none;
-    border: none;
-    font-weight: 600;
-    padding: 1rem;
-    cursor: pointer;
+.yellow {
+    color: #fcba11;
 }
 
 .posts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(calc(300px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(calc(500px), 1fr));
     gap: 5rem;
+    padding: 5rem;
 }
 
 .post {
@@ -57,4 +40,20 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.tags {
+    display: flex;
+    gap: 1rem;
+}
+
+.tags p {
+    padding: 0.25rem 1rem;
+    background: #1d1c1c;
+    text-align: center;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
